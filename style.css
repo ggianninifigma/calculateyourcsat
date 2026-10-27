@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #e3f9ff; 
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    position: relative;
+    display: flex;
+    background-image: linear-gradient(rgba(227,249,255,0.85),rgba(227,249,255,0.85)), url("Ampacademy.png");
+    justify-content: space-between;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.section {
+    width: calc(33.33% - 20px); 
+    margin: 40px 10px; 
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#titolo {
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    margin: 0;
+    padding: 20px;
+    z-index: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+label[for="csatPercentage"] {
+    margin-top: 10px;
+}
+
+input[type="number"] {
+    width: calc(40% - 24px);
+    border: 1;
+    outline: 0;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 80%;
+    margin-top: 27px;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#clear {
+    padding: 8px; 
+    width: auto; 
+    height: 60px;
+    bottom: 10px;
+    right: 30px;
+    background-color: #FF6F61;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden:
+    text-overflow: ellipsis;
+}
+
+#clear:hover {
+    background-color: #FF5246;
+}
+  
+.output {
+    margin-top: 10px;
+}
